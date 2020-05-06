@@ -11,6 +11,15 @@
     @extend %layoutBoxBase;
     max-width: $container-width-lg;
 }
+.box-md{
+    @extend %layoutBoxBase;
+    max-width: $container-width-md;
+}
+
+.display-1{
+    font-size: 4.5em;
+    font-weight: bold;
+}
 
 .h2{
     font-size: 2em;
@@ -26,6 +35,9 @@
 }
 .fz-rem120{
     font-size: 1.2rem;
+}
+.fz-100{
+    font-size: 1em;
 }
 .fz-120{
     font-size: 1.2em;
@@ -49,6 +61,12 @@
     &:hover{
         color : $main;
     }
+}
+.bg-body{
+    background-color: $body-bg;
+}
+.bg-sub{
+    background-color: $sub;
 }
 
 .d-none{
@@ -114,12 +132,31 @@
     margin-left: 0.5em;
 }
 
+.pd-050{
+    padding: 0.5em;
+}
+.pd-100{
+    padding: 1em;
+}
+.pd-200{
+    padding: 2em;
+}
+
 .pd-t-950{
     padding-top: 9.5em;
+}
+.pd-t-500{
+    padding-top: 5em;
+}
+.pd-b-500{
+    padding-bottom: 5em;
 }
 
 .float-r{
     float: right;
+}
+.z-2{
+    z-index: 9998;
 }
 
 .z-3{
@@ -129,28 +166,57 @@
     z-index: 9996;
 }
 
-
-
-
-.editableInput{
-    @extend %no-pointer-touch-device;
-    cursor: pointer;
-    transition : .1s;
-    padding: 0;
-    background-color: transparent;
-    &:hover{
-        box-shadow: 3px 3px 10px -3px dimgrey
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    &__u__1-4{
+        width: 25%;
     }
-    &:focus{
-        padding: 0.25em 0 0.25em 0.25em;
-        box-shadow : none;
-        cursor: text;
-        background-color: #fff;
+    &__u__1-3{
+        width: 33.33333333333333%;
+    }
+    &__u__1-1{
+        width: 100%;
+    }
+    &__u__2-3{
+        width: 66.666666666666666666%;
     }
 }
+.bd-b--contrast{
+    border-bottom: 2px solid $contrast;
+}
+.min-h-300{
+    min-height: 300px;
+}
+.pos-r{
+    position: relative;
+}
+.pos-a{
+    position: absolute;
+}
+.b-0{
+    bottom: 0;
+}
+.r-0{
+    right: 0;
+}
 
-
-
+@include screen{
+    .grid{
+        &__u__1-4-scr{
+            width: 25%;
+        }
+        &__u__1-3-scr{
+            width: 33.33333333333333%;
+        }
+        &__u__1-2-scr{
+            width: 50%;
+        }
+        &__u__1-1-scr{
+            width: 100%;
+        }
+    }
+}
 
 @include pad{
     .d-none-pad{
@@ -158,6 +224,9 @@
     }
     .d-block-pad{
         display: block;
+    }
+    .d-inline-pad{
+        display: inline;
     }
     .w-full-pad{
         width: 100%;
@@ -167,5 +236,40 @@
     }
     .d-block-pad{
         display: block;
+    }
+    .fz-100-pad{
+        font-size: 1em;
+    }
+    .display-3-pad{
+        font-size : 3em;
+    }
+    
+    .grid{
+        &__u__1-4-pad{
+            width: 25%;
+        }
+        &__u__1-3-pad{
+            width: 33.33333333333333%;
+        }
+        &__u__1-2-pad{
+            width: 50%;
+        }
+        &__u__1-1-pad{
+            width: 100%;
+        }
+    }
+}
+
+@include mobile{
+    .grid{
+        &__u__1-4-mb{
+            width: 25%;
+        }
+        &__u__1-3-mb{
+            width: 33.33333333333333%;
+        }
+        &__u__1-1-mb{
+            width:  100%;
+        }
     }
 }

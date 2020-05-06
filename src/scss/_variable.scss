@@ -5,6 +5,7 @@ $gray-300   : lightgray;
 $gray-400   : #b2b2b2;
 $gray-500   : #adb5bd;
 $gray-800   : gray;
+$gray-850   : #ffffff4f;
 $gray-900   : #2f2f2f;
 $black      : #000;
 
@@ -24,10 +25,10 @@ $blue-800   : #0d6efd;
 $green-400  : #07aa07;    
 $green-200  : #6ed786;   
 
-$main       : #ef4056 ;
+$main       : #ff8d00 ;
 $contrast   : #fff    ;
-$sub        : $gray-800 ;
-$lightSub   : $gray-400 ;
+$sub        : $gray-850 ;
+$lightSub   : $gray-300 ;
 $green      : #00988e ;
 $yellow     : #fcb643 ;
 
@@ -39,8 +40,8 @@ $info       : $blue-800 ;
 $darken     : $gray-400 ;
 
 // Body  ----
-$body-bg      : #f5eddd ;
-$body-color   : $black;
+$body-bg      : black;
+$body-color   : $contrast;
 $footer-bg    : $gray-400;
 $footer-color : $gray-900;
 
@@ -123,7 +124,8 @@ $block-list-padding : $padding-vertical $padding-horizontal ;
 
 
 $container-width-full : 1920px; // ($col-width + $gutter*2)*$cols;
-$container-width-lg : 1080px; // ($col-width + $gutter*2)*$cols;
+$container-width-lg : 1280px; // ($col-width + $gutter*2)*$cols;
+$container-width-md : 960px; // ($col-width + $gutter*2)*$cols;
 // $container-width-md :  960px;
 // $container-width-sm :  540px;
 

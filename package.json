@@ -12,6 +12,7 @@
     "video.js": "^7.7.5",
     "vue": "^2.6.11",
     "vue-axios": "^2.1.5",
+    "vue-loading-overlay": "^3.3.2",
     "vue-router": "^3.1.6",
     "vuejs-paginate": "^2.1.0"
   },
