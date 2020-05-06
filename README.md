@@ -1,19 +1,5 @@
 # video_collection
 
-## Project setup
-```
-npm install
-```
+Production in Vue-CLI 3 environment.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://shunnnet.github.io/demo-movie-site/dist/index.html#/index
